@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Changa:wght@200..800&family=Noto+Naskh+Arabic:wght@400..700&family=Readex+Pro:wght@160..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+:root {
+    --back-1: #141414;
+    --back-2: #f6f7eb;
+    --back-3: #4e4e4e;
+    --back-4: #292828;
+    --color: #dddddd;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    
+    font-family: sans-serif,serif;
+}
+body {
+    background-color: var(--back-2);
+}
+header {
+    width: 100%;
+    padding: 0px 0px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--back-1);
+    color: var(--back-2);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    opacity: 0.5;
+    transition: .3s ease;
+}
+header:hover {
+    opacity: 1;
+}
+#search-box {
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+}
+#results {
+    border: 1px solid black;
+    color: black;
+    width: 300px;
+    background: white;
+    position: absolute;
+    display: none;
+    max-height: 150px;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+.result-item {
+    padding: 10px;
+    cursor: pointer;
+}
+.result-item:hover {
+    background-color: var(--back-2);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    gap: 50px;
+}
+h3 {
+    color: red;
+}
+.card {
+    font-size: 2em;
+    font-family: 'Changa', sans-serif;
+    font-weight: 400;
+    line-height: 1.5em;
+    min-width: 400px;
+    max-width: 90%;
+    min-height: 150px;
+    text-align: center;
+    background-color: var(--back-4);
+    color: var(--color);
+    border-radius: 20px;
+    padding: 10px;
+}
