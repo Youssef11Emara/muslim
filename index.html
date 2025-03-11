@@ -9,45 +9,152 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Changa:wght@200..800&family=Noto+Naskh+Arabic:wght@400..700&family=Readex+Pro:wght@160..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-    <meta name="author" content="Youssef-Emara">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" href="imges/quran.ico">
     <title>مسلم | Muslim</title>
 </head>
-<body dir="rtl">
+<body>
     <header>
-        <div>
-            <h1>Muslim</h1>
-        </div>
-        <div>
-            <input type="text" id="search-box" placeholder="ابحث عن قسم...">
-            <div id="results"></div>
-        </div>
+        <h1>I am a <span>Muslim</span></h1>
+        <nav dir="rtl">
+            <ul class="ul-1">
+                <li class="li-1"><a href="1/index.html">القرآن الكريم</a></li>
+                <li class="li-1"><a href="#">تلاوه</a></li>
+                <li class="li-1"><a href="2/index.html">اذكار</a></li>
+                <li class="nav-li-other"><a class="a-2" href="#">اخري</a>
+                    <ul class="ul-2">
+                        <li class="li-2"><a href="">موعيدالصلاه</a></li>
+                        <li class="li-2"><a href="">شهر رمضان</a></li>
+                        <li class="li-2"><a href="">يوم العيد</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
+    <button id="toggle-theme">🌙 تغيير الوضع</button>
     <main>
-        <div class="contenr">
-            <a title="اضغط هنا للاستمرار" href="1/index.html" class="card" id="quran">
-                <h3>قران</h3>
-                <img src="imges/1.png" alt="">
+        <article>
+            <a  href="#" class="card">
+                <div class="article-img">
+                    <img src="imges/Abd-Albasit.jpeg" alt="سورة الشيخ">
+                </div>
+                <h3>عبد الباسط عبد الصمد</h3>
             </a>
-            <a title="اضغط هنا للاستمرار" href="2/index.html" class="card" id="remembrances">
-                <h3>اذكار</h3>
-                <img src="imges/2.png" alt="">
+
+            <a href="#" class="card">
+                <div class="article-img">
+                    <img src="imges/Maher.jpeg" alt="سورة الشيخ">
+                </div>
+                <h3>ماهر المعقلي</h3>
             </a>
-            <a title="اضغط هنا للاستمرار" href="" class="card" id="recitation">
-                <h3>تلاوة</h3>
-                <img src="imges/3.png" alt="">
+
+            <a href="#" class="card">
+                <div class="article-img">
+                    <img src="imges/Mashare.jpeg" alt="سورة الشيخ">
+                </div>
+                <h3>مشاري العفاسي</h3>
             </a>
-            <a title="اضغط هنا للاستمرار" href="" class="card" id="prayer">
-                <h3>مواعيد الصلاوات</h3>
-                <img src="imges/4.png" alt="">
+
+            <a href="#" class="card">
+                <div class="article-img">
+                    <img src="imges/Yaser.jpeg" alt="سورة الشيخ">
+                </div>
+                <h3>ياسر الدوسري</h3>
             </a>
-            <a title="اضغط هنا للاستمرار" href="" class="card" id="ramadan">
-                <h3>شهر رمضان</h3>
-                <img src="imges/5.png" alt="">
+
+            <a href="#" class="card">
+                <div class="article-img">
+                    <img src="imges/Menshawy.jpeg" alt="سورة الشيخ">
+                </div>
+                <h3>محمد المنشاوي</h3>
             </a>
-        </div>
+        </article>
+        <section>
+            <!-- <section class="islamic-section">
+                <div class="card">
+                    <div class="box hadith">
+                        <h3>📜 حديث اليوم</h3>
+                        <p id="hadith">جاري التحميل...</p>
+                    </div>
+                    <div class="box countdown">
+                        <h3>🕰️ عدّاد رمضان</h3>
+                        <p id="ramadan-timer">جاري الحساب...</p>
+                    </div>
+                    <div class="box azkar">
+                        <h3>🕌 ذكر اليوم</h3>
+                        <p id="azkar">جاري التحميل...</p>
+                    </div>
+                    <div class="box quran">
+                        <h3>📖 ورد يومي</h3>
+                        <p id="quran">جاري التحميل...</p>
+                    </div>
+                </div>
+            </section> -->
+            <section class="content">
+                <div class="title" dir="rtl">
+                    <span>تلاوات كبار القراء</span>
+                </div>
+                <div class="top">
+                    <div class="card-ifr">
+                        <iframe src="https://www.youtube.com/embed/a5xzcovUq0o?si=BHMUeCAEirRcg6Nv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>القارء الشيخ ياسر الدسري</p>
+                    </div>
+                    <div class="card-ifr">
+                        <iframe src="https://www.youtube.com/embed/rpVP_B4nsuQ?si=Zm5EW7RZtoRuN309" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>القارء الشيخ  محمد المنشاوي</p>
+                    </div>
+                    <div class="card-ifr">
+                        <iframe src="https://www.youtube.com/embed/Q9T__ivmYDw?si=_312DYFuh9Yz7E-X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>القارء الشيخ  عبدالباسط عبدالصمد</p>
+                    </div>
+                    <div class="card-ifr">
+                        <iframe src="https://www.youtube.com/embed/qyBYhky4dUc?si=wDlEqjI481QUFDGR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>القارء الشيخ ماهر المعقلي</p>
+                    </div>
+                    <div class="card-ifr">
+                        <iframe src="https://www.youtube.com/embed/t5SZG6KEVFQ?si=o64s4Z7ucwwztmHW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>القارء الشيخ  مشاري بن راشد</p>
+                    </div>
+                </div>
+                <div class="title" dir="rtl">
+                    <span>قصص امبياء</span>
+                </div>
+                <div class="buttom">
+                    <div class="card-ifr">
+                        <iframe src="https://www.youtube.com/embed/-zOhsr61WKU?si=mi_MPL6xWjuXhpqC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>قصص امبياء</p>
+                    </div>
+                    <div class="card-ifr">
+                        <iframe src="https://www.youtube.com/embed/eaB8Qjc_gv8?si=R2349t8lHcbJZWv-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>قصة سيدنا محمد</p>
+                    </div>
+                    <div class="card-ifr">
+                        <iframe src="https://www.youtube.com/embed/eZ3EyymSYwQ?si=uftpUK7G0wXiv1Hj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>قصة سيدنا سليمان</p>
+                    </div>
+                    <div class="card-ifr">
+                        <iframe src="https://www.youtube.com/embed/47WjEpv6dOE?si=riACAGflqlDCRONo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>قصة عمر بن الخطاب</p>
+                    </div>
+                    <div class="card-ifr">
+                        <iframe src="https://www.youtube.com/embed/AUF_Ri16_CA?si=GMAckiRB1zMbT9p7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>قصة سيدنا يوسف</p>
+                    </div>
+                    <div class="card-ifr">
+                        <iframe src="https://www.youtube.com/embed/NyaCIrS2684?si=mjpdhXDTGTcK32No" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>قصة سيدنا يونس</p>
+                    </div>
+                    <div class="card-ifr">
+                        <iframe src="https://www.youtube.com/embed/MLq2qvw9RAI?si=hMaLb4YCNvAXM8qJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>قصة سيدنا ابراهيم</p>
+                    </div>
+                </div>
+            </section>
+        </section>
     </main>
-    <script src="JS/main.js"></script>
+    <audio autoplay muted>
+        <source src="Audio/m_fixed_3T5tSQL.mp3" type="audio/mp3">
+    </audio>
+    <script src="app.js"></script>
 </body>
 </html>
