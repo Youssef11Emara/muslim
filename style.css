@@ -57,6 +57,7 @@ header nav .li-1 a{
     padding: 10px 20px;
     transition: 0.3s ease;
     color: var(--color-text);
+    border-radius: 5px;
 }
 header nav .li-1 a:hover {
     border-top: 2px solid var(--color-span);
@@ -93,6 +94,7 @@ header nav .li-1 a:hover {
     color: white;
     border-top: 2px solid transparent;
     padding: 10px;
+    border-radius: 5px;
 }
 .ul-2 .li-2 a:hover {
     border-top: 2px solid var(--color-span);
@@ -267,6 +269,7 @@ section .card {
     align-items: center; /* توسيط المحتوى */
     background-color: var(--back-2);
     padding: 10px;
+    gap: 10px;
     border-radius: 20px;
 }
 
