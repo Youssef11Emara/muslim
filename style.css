@@ -52,9 +52,6 @@ header nav .ul-1{
     align-items: center;
     font-weight: 700;
 }
-header nav .li-1 {
-    margin-right: 20px;
-}
 header nav .li-1 a{
     border-top: 2px solid transparent;
     padding: 10px 20px;
@@ -154,6 +151,7 @@ article {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    padding-top: 60px;
 }
 article:hover {
     width: 270px;
@@ -235,24 +233,23 @@ section .card {
 } */
 .content {
     width: 100%;
+    margin-left: 100px;
 }
-.content .top,
-.content .buttom {
-    width: 100%;
-    padding: 10px ;
-    padding-left: 100px;
+.content .top{
     display: flex;
-    align-items: center;
-    
-    gap: 5px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
-.content .top iframe,
-.content .buttom iframe{
-    margin-bottom: 2px;
-    margin-right: 2px;
-    border-radius: 5px;
+
+.content .top iframe{
+    width: 100%;  /* الفيديو يأخذ عرض العنصر بالكامل */
+    aspect-ratio: 16 / 9;  /* الحفاظ على نسبة الأبعاد */
+    height: auto;  /* يجعل الارتفاع يتكيف مع العرض */
+    object-fit: cover;  /* يمنع التشويه */
+    display: block;
 }
+
 .title {
     padding: 10px 20px 10px 0;
     background-color: var(--color-span);
@@ -262,29 +259,19 @@ section .card {
     padding: 10px;
     color: white;
 }
-.content .top .card-ifr,
-.content .buttom .card-ifr{
-    margin-left: 1%;
-    width: 24%;
-    background-color: var(--back-1);
-    padding: 10px;
-    border-radius: 10px;
-    transition: 0.3s ease;
+.content .top .card-ifr{
+    width: 90%;
+    max-width: 400px; /* الحد الأقصى لعرض الفيديو */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 5px;
-} 
-.content .buttom .card-ifr:hover {
-    background-color: var(--color-hover);
-    scale: 1.030;
-    margin-right: 10px;
+    flex-direction: column; /* ضمان عدم تمدد الفيديو بشكل غير متناسق */
+    align-items: center; /* توسيط المحتوى */
+    background-color: var(--back-2);
+    padding: 10px;
+    border-radius: 20px;
 }
+
 .content .top .card-ifr:hover {
     background-color: var(--color-hover);
-    scale: 1.030;
-    margin-right: 10px;
 }
 .content .top .card-ifr p,
 .content .buttom .card-ifr p{
@@ -323,3 +310,35 @@ button {
     color: white;
 }
 
+@media(max-width:960px){
+    header {
+        padding: 10px 60px;
+    }
+}
+@media(max-width:840px){
+    header {
+        padding: 10px;
+    }
+}
+@media(max-width:710px){
+    header nav .li-1 a{
+        padding: 10px 10px;
+    }
+}
+@media(max-width:640px){
+    header {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+@media(max-width:430px){
+    header h1{
+        font-size: 1.8em;
+    }
+    header nav .li-1 a{
+        font-size: 0.7em;
+    }
+}
+}
